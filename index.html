@@ -14,14 +14,14 @@
                 this.input.on('pointerdown', (event) => {
                     this.tweens.add({
                         targets: this.meep,
-                        scale: 2,
+                        scale: 5,
                         duration: 100
                     });
                 });
                 this.input.on('pointerup', (event) => {
                     this.tweens.add({
                         targets: this.meep,
-                        scale: 1,
+                        scale: 2,
                         duration: 100
                     });
                 });
@@ -46,8 +46,8 @@
                     // shoot away quickly
                     this.tweens.add({
                         targets: dropping,
-                        x: '+=' + (10*Math.random()),
-                        y: '+=' + (10*Math.random()),
+                        x: '+=' + (100*Math.random()),
+                        y: '+=' + (100*Math.random()),
                         duration: 250,
                         ease: 'Cubic.out'
                     });
